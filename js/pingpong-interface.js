@@ -1,4 +1,6 @@
 //Front-End
+var Calculator = require('./../js/pingong.js').calculatorModule;
+
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
     event.preventDefault();
