@@ -2,7 +2,9 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
-gulp.task('myTask', function() {
-  console.log('hello gulp');
-  // I am the inner anonymous function that is a parameter of gulp.task()!
+gulp.task('jsBrowserify', function() {
+  return browserify({ entries: ['./js/pingpong-interface.js'] })
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(gulp.dest('./build/js'));
 });
