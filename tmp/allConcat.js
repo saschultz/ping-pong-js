@@ -1,5 +1,5 @@
 //Front-End
-var Calculator = require('./../js/pingong.js').calculatorModule;
+var Calculator = require('./../js/pingpong.js').calculatorModule;
 
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
